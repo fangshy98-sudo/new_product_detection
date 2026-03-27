@@ -1,0 +1,8 @@
+﻿products:
+  - site_id: vapordna_us
+    product_url: https://vapordna.com/products/7-daze-mint-mates-nicotine-mints
+    extract_mode: http
+
+  - site_id: vapecityusa_us
+    product_url: https://vapecityusa.com/products/raz-ltx-25k-dc25000-vape
+    extract_mode: http

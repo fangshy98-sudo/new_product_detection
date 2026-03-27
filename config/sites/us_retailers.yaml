@@ -1,0 +1,55 @@
+﻿sites:
+  - site_id: vapordna_us
+    market: us
+    display_name: VaporDNA
+    base_url: https://vapordna.com
+    list_url: https://vapordna.com/collections/whats-new
+    platform: shopify_like
+    fetch_mode: http
+    product_url_pattern: /products/
+    supports_review_tracking: true
+    enabled: true
+
+  - site_id: megavapeusa_us
+    market: us
+    display_name: Mega Vape USA
+    base_url: https://megavapeusa.com
+    list_url: https://megavapeusa.com/collections/new-disposables
+    platform: shopify_like
+    fetch_mode: http
+    product_url_pattern: /products/
+    supports_review_tracking: false
+    enabled: false
+
+  - site_id: vapecityusa_us
+    market: us
+    display_name: Vape City USA
+    base_url: https://vapecityusa.com
+    list_url: https://vapecityusa.com/collections/new-arrivals
+    platform: shopify_like
+    fetch_mode: http
+    product_url_pattern: /products/
+    supports_review_tracking: true
+    enabled: true
+
+  - site_id: vapesourcing_us
+    market: us
+    display_name: Vapesourcing USA
+    base_url: https://vapesourcing.com
+    list_url: https://vapesourcing.com/usa-new-disposable-kit.html
+    platform: vapesourcing_html
+    fetch_mode: http
+    product_url_pattern: .html
+    supports_review_tracking: true
+    enabled: true
+
+  - site_id: elementvape_us
+    market: us
+    display_name: Element Vape
+    base_url: https://www.elementvape.com
+    list_url: https://www.elementvape.com/new-arrivals
+    platform: elementvape_browser
+    fetch_mode: browser
+    product_url_pattern: .html
+    supports_review_tracking: false
+    enabled: false

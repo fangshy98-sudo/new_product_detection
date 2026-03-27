@@ -1,0 +1,33 @@
+﻿[
+  {
+    "site_id": "vapordna_us",
+    "product_url": "https://vapordna.com/products/7-daze-mint-mates-nicotine-mints",
+    "product_name": null,
+    "extract_mode": "http",
+    "review_count": 7,
+    "rating_value": null,
+    "rating_count": null,
+    "comments": [],
+    "extracted_at": "2026-03-27T10:12:57.539535+00:00",
+    "error": null
+  },
+  {
+    "site_id": "vapecityusa_us",
+    "product_url": "https://vapecityusa.com/products/raz-ltx-25k-dc25000-vape",
+    "product_name": null,
+    "extract_mode": "http",
+    "review_count": 10,
+    "rating_value": 5.0,
+    "rating_count": null,
+    "comments": [
+      "A April Radziewicz Awesome Great shipping time and got what I asked for.",
+      "R Robin PLEASE keep the Raz LTX 25K in stock in Georgia Peach! Sooo hard to find - no comparison!",
+      "J Jim K. Always a great experience with Vapecity USA Love the Raz vapes.  Great quality.",
+      "M Michelle B. Exactly What I Was Looking For! Couldn't find Strawberry Burst locally so I tried Vape City USA & they had just restocked Raz & bought 5. They arrived in the next week, they're authentic, taste great & work well. I'm so glad I found Vape City USA, they have a lot to choose from, have great deals & amazing customer service. I will definitely be shopping here again!",
+      "K Kathy Gifford Quick service Exactly what I ordered. Love raz ga peach",
+      "R Rebecca Pino Great product I have had no issues thus far with my orders."
+    ],
+    "extracted_at": "2026-03-27T10:12:59.875377+00:00",
+    "error": null
+  }
+]
