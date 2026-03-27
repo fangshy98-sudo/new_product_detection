@@ -1,0 +1,32 @@
+﻿name: manual-reviews
+
+on:
+  workflow_dispatch:
+
+jobs:
+  run-manual-reviews:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          playwright install chromium
+
+      - name: Run manual review extraction
+        run: python -m scripts.run_manual_reviews
+
+      - name: Commit updated outputs
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add data/state/manual_reviews.json reports/manual_reviews_latest.md
+          git diff --cached --quiet || git commit -m "chore: update manual review outputs"
+          git push
