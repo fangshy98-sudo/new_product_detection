@@ -1,9 +1,9 @@
 # US New Product Monitor Report
 
-Generated at: `2026-03-27T22:35:22.150888+00:00`
+Generated at: `2026-03-28T22:31:25.233287+00:00`
 
 Tracked products: **100**
-New products in this run: **0**
+New products in this run: **1**
 
 ## Coverage
 
@@ -20,4 +20,6 @@ New products in this run: **0**
 
 ## New Products
 
-No new products detected in this run.
+| Site | Name | Price | Reviews | Rating | URL |
+| --- | --- | --- | ---: | ---: | --- |
+| vapesourcing_us | Arc Hypertine 35K Nicotine Free Disposable Vape 17ml (35000 Puffs) | $16.99 | 16 | - | https://vapesourcing.com/arc-hypertine-35k-zero-nicotine.html |
