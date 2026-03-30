@@ -17,6 +17,8 @@ from new_product_detection.config_loader import load_reporting_config, load_site
 from new_product_detection.detail_extraction import enrich_product_record
 from new_product_detection.diff import detect_unseen_products, merge_with_previous
 from new_product_detection.fetch import fetch_html
+from new_product_detection.freshness import suppress_probable_legacy_events, suppress_probable_legacy_new_products
+from new_product_detection.identity import migrate_known_product_keys, migrate_new_product_events, migrate_product_records
 from new_product_detection.models import NewProductEvent, ProductRecord
 from new_product_detection.report import write_market_report
 from new_product_detection.storage import (
@@ -82,10 +84,8 @@ def _bootstrap_known_keys(
     existing_events: list[NewProductEvent],
     report_path: str,
 ) -> set[str]:
-    if existing_known_keys:
-        return set(existing_known_keys)
-
-    keys = {item.product_key for item in previous}
+    keys = set(existing_known_keys)
+    keys.update(item.product_key for item in previous)
     keys.update(item.product_key for item in existing_events)
 
     report_file = Path(report_path)
@@ -103,13 +103,25 @@ def main() -> int:
     sites = [site for site in load_sites(args.config) if site.enabled]
     sites_by_id = {site.site_id: site for site in sites}
 
-    previous = load_products_state(args.state)
-    existing_events = load_new_product_events(reporting.new_product_event_log_path)
-    stored_known_keys = load_known_product_keys(reporting.known_product_keys_path)
+    identity_cache: dict[str, tuple[str, str]] = {}
+    sitemap_cache: dict[str, dict[str, object]] = {}
+    errors: dict[str, str] = {}
+
+    previous = migrate_product_records(load_products_state(args.state), sites_by_id, identity_cache)
+    existing_events = migrate_new_product_events(load_new_product_events(reporting.new_product_event_log_path), sites_by_id, identity_cache)
+    stored_known_keys = migrate_known_product_keys(load_known_product_keys(reporting.known_product_keys_path), sites_by_id, identity_cache)
+
+    existing_events, suppressed_existing_events = suppress_probable_legacy_events(existing_events, reporting, sitemap_cache)
+    if suppressed_existing_events:
+        errors["cleanup:vapecityusa_us"] = (
+            f"Suppressed {len(suppressed_existing_events)} legacy historical events using Vape City sitemap lastmod "
+            f"older than {reporting.vapecity_legacy_lastmod_grace_days} days."
+        )
+
     known_keys = _bootstrap_known_keys(stored_known_keys, previous, existing_events, args.report)
+    known_keys = migrate_known_product_keys(known_keys, sites_by_id, identity_cache)
 
     current: list[ProductRecord] = []
-    errors: dict[str, str] = {}
 
     for site in sites:
         try:
@@ -123,10 +135,26 @@ def main() -> int:
             errors[site.site_id] = str(exc)
             print(f"[{site.site_id}] failed: {exc}")
 
+    current = migrate_product_records(current, sites_by_id, identity_cache)
+
     seen_at = datetime.now(timezone.utc).isoformat()
     local_date = datetime.now(ZoneInfo(reporting.timezone)).date().isoformat()
     merged = merge_with_previous(previous, current, seen_at)
     historically_new_products = detect_unseen_products(merged, known_keys)
+    historically_new_products, suppressed_new_products = suppress_probable_legacy_new_products(
+        historically_new_products,
+        reporting,
+        sitemap_cache,
+    )
+    if suppressed_new_products:
+        message = (
+            f"Suppressed {len(suppressed_new_products)} pseudo-new products using Vape City sitemap lastmod "
+            f"older than {reporting.vapecity_legacy_lastmod_grace_days} days."
+        )
+        if "cleanup:vapecityusa_us" in errors:
+            errors["cleanup:vapecityusa_us"] = f"{errors['cleanup:vapecityusa_us']} {message}"
+        else:
+            errors["cleanup:vapecityusa_us"] = message
 
     for item in historically_new_products:
         try:
@@ -136,7 +164,7 @@ def main() -> int:
             print(f"[detail:{item.site_id}] failed for {item.product_key}: {exc}")
 
     new_events = _build_new_product_events(historically_new_products, reporting.timezone)
-    all_events = existing_events + new_events
+    all_events = migrate_new_product_events(existing_events + new_events, sites_by_id, identity_cache)
     updated_known_keys = set(known_keys)
     updated_known_keys.update(item.product_key for item in merged)
 
@@ -149,6 +177,8 @@ def main() -> int:
 
     print(f"Tracked products: {len(merged)}")
     print(f"Historically new products: {len(historically_new_products)}")
+    print(f"Suppressed legacy Vape City events: {len(suppressed_existing_events)}")
+    print(f"Suppressed pseudo-new Vape City products this run: {len(suppressed_new_products)}")
     print(f"Daily snapshot written to: {snapshot_path}")
     print(f"Weekly reports refreshed: {len(created_reports)} files")
     print(f"Report written to: {args.report}")
@@ -157,3 +187,4 @@ def main() -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
+

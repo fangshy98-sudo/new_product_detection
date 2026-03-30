@@ -27,6 +27,7 @@ class ReportingConfig:
     known_product_keys_path: str = "data/history/known_product_keys.json"
     weekly_report_dir: str = "reports/weekly"
     weekly_report_index_path: str = "reports/weekly/index.md"
+    vapecity_legacy_lastmod_grace_days: int = 7
 
 
 @dataclass(slots=True)

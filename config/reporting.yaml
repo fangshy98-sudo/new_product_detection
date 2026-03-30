@@ -5,3 +5,4 @@ new_product_event_log_path: data/history/new_product_events.json
 known_product_keys_path: data/history/known_product_keys.json
 weekly_report_dir: reports/weekly
 weekly_report_index_path: reports/weekly/index.md
+vapecity_legacy_lastmod_grace_days: 7
