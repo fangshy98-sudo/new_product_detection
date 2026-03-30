@@ -1,4 +1,4 @@
-name: us-monitor
+﻿name: us-monitor
 
 on:
   workflow_dispatch:
@@ -29,6 +29,6 @@ jobs:
         run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
-          git add data/state/us_products.json reports/us_latest.md
+          git add data/state/us_products.json reports/us_latest.md data/history reports/weekly
           git diff --cached --quiet || git commit -m "chore: update us monitor outputs"
           git push

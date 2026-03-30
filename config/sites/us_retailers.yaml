@@ -25,10 +25,10 @@
     market: us
     display_name: Vape City USA
     base_url: https://vapecityusa.com
-    list_url: https://vapecityusa.com/collections/new-arrivals
-    platform: shopify_like
+    list_url: https://vapecityusa.com/new-arrivals
+    platform: vapecity_cards
     fetch_mode: http
-    product_url_pattern: /products/
+    product_url_pattern: /new-arrivals
     supports_review_tracking: true
     enabled: true
 

@@ -4,7 +4,7 @@ from pathlib import Path
 
 import yaml
 
-from .models import ManualProductConfig, SiteConfig
+from .models import ManualProductConfig, ReportingConfig, SiteConfig
 
 
 def _load_yaml(path: str | Path) -> dict:
@@ -29,3 +29,7 @@ def load_manual_products(path: str | Path) -> list[ManualProductConfig]:
     products = payload.get("products", [])
     return [ManualProductConfig(**item) for item in products]
 
+
+def load_reporting_config(path: str | Path) -> ReportingConfig:
+    payload = _load_yaml(path)
+    return ReportingConfig(**payload)

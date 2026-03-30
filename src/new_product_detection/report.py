@@ -11,6 +11,18 @@ def _escape_markdown_cell(value: object) -> str:
     return str(value).replace("|", "\\|").replace("\n", " ")
 
 
+def _format_points(points: list[str]) -> str:
+    if not points:
+        return "-"
+    return "<br>".join(_escape_markdown_cell(point) for point in points[:3])
+
+
+def _format_params(params: dict[str, str]) -> str:
+    if not params:
+        return "-"
+    return "<br>".join(f"{_escape_markdown_cell(key)}: {_escape_markdown_cell(value)}" for key, value in params.items())
+
+
 def write_market_report(
     path: str | Path,
     products: list[ProductRecord],
@@ -30,7 +42,7 @@ def write_market_report(
         f"Generated at: `{timestamp}`",
         "",
         f"Tracked products: **{len(products)}**",
-        f"New products in this run: **{len(new_products)}**",
+        f"Historically new products in this run: **{len(new_products)}**",
         "",
         "## Coverage",
         "",
@@ -54,20 +66,25 @@ def write_market_report(
 
     lines.extend(["", "## New Products", ""])
     if not new_products:
-        lines.append("No new products detected in this run.")
+        lines.append("No historically new products detected in this run.")
     else:
         lines.extend([
-            "| Site | Name | Price | Reviews | Rating | URL |",
-            "| --- | --- | --- | ---: | ---: | --- |",
+            "| Site | First Seen | Name | Price | Reviews | Rating | Image | Selling Points | Basic Parameters | URL |",
+            "| --- | --- | --- | --- | ---: | ---: | --- | --- | --- | --- |",
         ])
         for item in new_products:
+            image_cell = f"[Image]({item.image_url})" if item.image_url else "-"
             lines.append(
-                "| {site} | {name} | {price} | {reviews} | {rating} | {url} |".format(
+                "| {site} | {first_seen} | {name} | {price} | {reviews} | {rating} | {image} | {points} | {params} | {url} |".format(
                     site=_escape_markdown_cell(item.site_id),
+                    first_seen=_escape_markdown_cell(item.first_seen_at or "-"),
                     name=_escape_markdown_cell(item.name),
                     price=_escape_markdown_cell(item.price_text or "-"),
                     reviews=item.review_count if item.review_count is not None else "-",
                     rating=item.rating_value if item.rating_value is not None else "-",
+                    image=image_cell,
+                    points=_format_points(item.selling_points),
+                    params=_format_params(item.basic_params),
                     url=_escape_markdown_cell(item.product_url),
                 )
             )
