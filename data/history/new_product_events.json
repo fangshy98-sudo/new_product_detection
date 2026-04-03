@@ -2235,5 +2235,48 @@
       "oil_volume": "18 mL",
       "nicotine": "5% nicotine"
     }
+  },
+  {
+    "site_id": "vapesourcing_us",
+    "market": "us",
+    "product_key": "https://vapesourcing.com/fasta-burrst-v2-37000.html",
+    "name": "Fasta Burrst V2 37000 Disposable Vape 5% (37K Puffs)",
+    "product_url": "https://vapesourcing.com/fasta-burrst-v2-37000.html",
+    "first_detected_at": "2026-04-03T22:36:06.466507+00:00",
+    "first_detected_date": "2026-04-04",
+    "price_text": "$16.99",
+    "price_value": 16.99,
+    "review_count": 21,
+    "rating_value": 4.7,
+    "rating_count": null,
+    "image_url": "https://image.vapesourcing.com/images/202509/fasta-burrst-37000-1.jpg",
+    "description_text": "Fasta Burrst V2 37000 Disposable Vape comes with 2 tanks, 4 coils and 4 editions of adjustable coolness, sourness, creamy flavors and slush tastes.",
+    "selling_points": [
+      "Fasta Burrst V2 37000 Disposable Vape Fasta Burrst V2 Disposable Kit INTRODUCTION Fasta Burrst V2 37000 Disposable Vape is so far the most versatile flavor control vape by Fasta. This disposable kit is equipped with 2 tanks and 4 coils. There are 2 output modes and 3 airflow settings available. Apart from the output power, you can add extra ice, sourness, creamy tastes or slush flavors (depending on the edition you buy) to the original flavors. All you need to do is press the button and see the magic happen. Fasta Burrst V2 37K is the best disposable vape with double tanks that you shouldn't miss! Features • Pre-filled Vape Juice • Rechargeable Integrated 850mAh Battery • Double Tanks with 4 Coils • Puff Count: Approximately 37000 Puffs • 2 Output Modes • 4 Editions: Creamy / Sour / Ice / Slush • 3 Airflow Levels • Large Digital Display with Output Modes, Battery Life, E-juice Level and Flavor Levels • 5%(50mg/ml) Nicotine Strength • USB Type-C Charging (Cable Not Included) • Draw-Activated • Smooth MTL Experience Fasta Burrst V2 37000 Disposable Kit PACKAGE LIST 1 x Fasta Burrst V2 37000 Flavor Options • Wild Cherry • White Grape • Lemon Heads • Fcuking Fab • Cool Mint • Blue Razz • Peach Mango Watermelon • Miami Mint • Perfect Peach • Banana Taffy • Watermelon • Strawnana • Straw Shot • Sour Apple • Pineapple Punch • Double Mango • Cali Orange • Bluemelon ORDERING TIPS Attention: As the manufacturer needs the serial number to provide a replacement, we highly recommend you keep the original packing box or take picture of the code before discarding it. Thank you! Reviewed & Published by Vapesourcing Editorial Team The Vapesourcing Editorial Team specializes in vapes, product testing, and market research since 2014. Meet Our Team"
+    ],
+    "basic_params": {}
+  },
+  {
+    "site_id": "vapesourcing_us",
+    "market": "us",
+    "product_key": "https://vapesourcing.com/remit-galaxy-42k.html",
+    "name": "Remit Galaxy 42K Disposable Vape 22ml 5%",
+    "product_url": "https://vapesourcing.com/remit-galaxy-42k.html",
+    "first_detected_at": "2026-04-03T22:36:06.466507+00:00",
+    "first_detected_date": "2026-04-04",
+    "price_text": "$14.99",
+    "price_value": 14.99,
+    "review_count": 14,
+    "rating_value": 4.7,
+    "rating_count": null,
+    "image_url": "https://image.vapesourcing.com/images/202511/remit-galaxy-42k-1.jpg",
+    "description_text": "Remit Galaxy 42K Disposable Vape is pre-filled with 22ml e-juice and offers 2 vaping modes.",
+    "selling_points": [
+      "Remit Galaxy 42K Disposable Vape Remit Galaxy 42K Disposable Kit INTRODUCTION Remit Galaxy 42K Disposable Vape is pre-filled with 22ml vape juice and runs on a 900mAh rechargeable battery. This unique disposable kit is equipped with a large 3D curved screen with light effects in the front and vaping data on the right side. You can check the battery status as well as the e-juice level with ease. Moreover, Remit Galaxy 42K provides two different vaping modes: Regular Mode and Pulse Mode. You can enjoy as many as 42K puffs under the Regular Mode and savor the best flavor under the Pulse Mode. Features • 22ml Large Vape Juice Capacity • 900mAh Integrated Rechargeable Battery • 3D Curved Screen with Light Effects and Battery/E-juice Indicators • Nicotine Strength: 5% (50mg/ml) • Puff Count: 42000 Puffs (Regular Mode) / 20000 Puffs (Pulse Mode) • Type-C Recharging (Cable Not Included) Remit Galaxy 42K PACKAGE LIST 1 x Remit Galaxy 42K Disposable Kit Flavor Options • Frozen White Grape • Lemon Heads • Mexico Mango • Miami Mint • Sour Straws • Strawberry Banana • Strawberry Mango • Watermelon Ice • White Gummy Ice • White Peach Raspberry ORDERING TIPS Attention: As the manufacturer needs the serial number to provide a replacement, we highly recommend you keep the original packing box or take picture of the code before discarding it. Thank you! Reviewed & Published by Vapesourcing Editorial Team The Vapesourcing Editorial Team specializes in vapes, product testing, and market research since 2014. Meet Our Team"
+    ],
+    "basic_params": {
+      "oil_volume": "22 mL",
+      "battery": "900mAh"
+    }
   }
 ]
