@@ -2334,5 +2334,39 @@
       "battery": "650mAh",
       "charging": "rechargeable"
     }
+  },
+  {
+    "site_id": "vapecityusa_us",
+    "market": "us",
+    "product_key": "vapecityusa_us:pid:2412",
+    "name": "Chillax Psylo 35K Disposable Vape — Dual Mesh, Crystal Tank",
+    "product_url": "https://vapecityusa.com/chillax-psylo-35k-vape",
+    "first_detected_at": "2026-04-09T22:42:12.749577+00:00",
+    "first_detected_date": "2026-04-10",
+    "price_text": "$18.99",
+    "price_value": 18.99,
+    "review_count": null,
+    "rating_value": null,
+    "rating_count": null,
+    "image_url": "https://vapecityusa.com/media/catalog/product/c/h/chillax-psylo-35k-puffs-disposable-vape.webp",
+    "description_text": "The Chillax Psylo 35K is a draw-activated disposable vape with up to 35,000 puffs in Normal Mode or 20,000 puffs in Boost Mode. It packs 15mL of 5% (50mg) salt nicotine e-liquid, a dual mesh coil, a crystal tank, a 1000mAh rechargeable battery, USB-C pass-through charging, and an interactive chip that lights up near other Psylo users. Made in Korea. Texas compliant.",
+    "selling_points": [
+      "Up to 35,000 puffs in Normal Mode and up to 20,000 puffs in Boost Mode. Boost Mode uses more juice per puff, so the count is lower.",
+      "The Psylo has a built-in chip that lights up when another Chillax Psylo user is within 10 meters of you. It is a fun way to spot other Chillax fans nearby.",
+      "The device ships locked. It stays inactive until you press the mouthpiece for the first time. This keeps the battery and e-liquid fresh until you are ready.",
+      "Yes. The USB-C port supports pass-through charging, so you can keep vaping while the 1000mAh battery refills.",
+      "Both deliver 35,000 puffs at 5% salt nicotine. The Psylo adds a lock system and an interactive proximity chip, and it is priced lower. The Lost Mary holds 18mL versus 15mL on the Psylo.",
+      "5% (50mg) salt nicotine. There is no zero nicotine, nicotine-free, or 0% nic option for this device."
+    ],
+    "basic_params": {
+      "puff_count": "35,000",
+      "oil_volume": "15 mL",
+      "battery": "1000mAh",
+      "nicotine": "50mg",
+      "coil": "dual mesh coil",
+      "screen": "Display",
+      "charging": "rechargeable",
+      "modes": "Boost Mode"
+    }
   }
 ]
