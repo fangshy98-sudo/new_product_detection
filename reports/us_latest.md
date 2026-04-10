@@ -1,6 +1,6 @@
 # US New Product Monitor Report
 
-Generated at: `2026-04-09T22:42:14.030802+00:00`
+Generated at: `2026-04-10T22:40:09.294751+00:00`
 
 Tracked products: **100**
 Historically new products in this run: **1**
@@ -13,14 +13,8 @@ Historically new products in this run: **1**
 | vapesourcing_us | 40 |
 | vapordna_us | 36 |
 
-## Fetch Errors
-
-| Site | Error |
-| --- | --- |
-| cleanup:vapecityusa_us | Suppressed 1 pseudo-new products using Vape City sitemap lastmod older than 7 days. |
-
 ## New Products
 
 | Site | First Seen | Name | Price | Reviews | Rating | Image | Selling Points | Basic Parameters | URL |
 | --- | --- | --- | --- | ---: | ---: | --- | --- | --- | --- |
-| vapecityusa_us | 2026-04-09T22:42:12.749577+00:00 | Chillax Psylo 35K Disposable Vape — Dual Mesh, Crystal Tank | $18.99 | - | - | [Image](https://vapecityusa.com/media/catalog/product/c/h/chillax-psylo-35k-puffs-disposable-vape.webp) | Up to 35,000 puffs in Normal Mode and up to 20,000 puffs in Boost Mode. Boost Mode uses more juice per puff, so the count is lower.<br>The Psylo has a built-in chip that lights up when another Chillax Psylo user is within 10 meters of you. It is a fun way to spot other Chillax fans nearby.<br>The device ships locked. It stays inactive until you press the mouthpiece for the first time. This keeps the battery and e-liquid fresh until you are ready. | puff_count: 35,000<br>oil_volume: 15 mL<br>battery: 1000mAh<br>nicotine: 50mg<br>coil: dual mesh coil<br>screen: Display<br>charging: rechargeable<br>modes: Boost Mode | https://vapecityusa.com/chillax-psylo-35k-vape |
+| vapesourcing_us | 2026-04-10T22:40:07.819179+00:00 | Pixi 50K Disposable Vape 6% (50000 Puffs) | $14.99 | 11 | 4.9 | [Image](https://image.vapesourcing.com/images/202602/800-800-pixi-bogo.jpg) | Pixi 50K Disposable Vape Pixi 50K Disposable Kit INTRODUCTION Pixi 50K Disposable Vape features a large e-juice with 6% nicotine strength, delivering an impressive 50000 puffs. The transparent tank window is integrated into its circular exterior design. You can use this to observe the e-liquid usage. A button on the side of the device allows you to switch between two modes. The normal mode for up to 50000 puffs with a 900mAh battery. And the higher nicotine strength vapes are for those seeking a stronger throat hit. Choose this emerging brand and embark on a unique experience. Features • Approximately 50000 Puffs • Internal 900mAh Rechargeable Battery • Two Modes: Normal / Turbo • Adjustable Airflow • Transparent Tank Window • Equipped with 0.9ohm Dual Mesh Coil • Draw Activation • USB Type-C Charging (cable not included) Pixi 50K Kit PACKAGE LIST 1 x Pixi 50000 Puffs Disposable Kit Flavor Options • Arctic Freeze • Blackcurrant Grape • Blueberry Peach Ice • Cane Tobacco • Double Grape Ice • Strawberry Dew Ice • Wanilla Bean Coffee ORDERING TIPS Attention: As the manufacturer needs the serial number to provide a replacement, we highly recommend you keep the original packing box or take picture of the code before discarding it. Thank you! Reviewed & Published by Vapesourcing Editorial Team The Vapesourcing Editorial Team specializes in vapes, product testing, and market research since 2014. Meet Our Team | puff_count: 50000<br>battery: 900mAh<br>nicotine: 6% nicotine | https://vapesourcing.com/pixi-50k-disposable-vape.html |

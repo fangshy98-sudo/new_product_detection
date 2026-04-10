@@ -2368,5 +2368,29 @@
       "charging": "rechargeable",
       "modes": "Boost Mode"
     }
+  },
+  {
+    "site_id": "vapesourcing_us",
+    "market": "us",
+    "product_key": "https://vapesourcing.com/pixi-50k-disposable-vape.html",
+    "name": "Pixi 50K Disposable Vape 6% (50000 Puffs)",
+    "product_url": "https://vapesourcing.com/pixi-50k-disposable-vape.html",
+    "first_detected_at": "2026-04-10T22:40:07.819179+00:00",
+    "first_detected_date": "2026-04-11",
+    "price_text": "$14.99",
+    "price_value": 14.99,
+    "review_count": 11,
+    "rating_value": 4.9,
+    "rating_count": null,
+    "image_url": "https://image.vapesourcing.com/images/202602/800-800-pixi-bogo.jpg",
+    "description_text": "Pixi 50K Disposable Vape features a large vape juice with 6% nicotine strength.",
+    "selling_points": [
+      "Pixi 50K Disposable Vape Pixi 50K Disposable Kit INTRODUCTION Pixi 50K Disposable Vape features a large e-juice with 6% nicotine strength, delivering an impressive 50000 puffs. The transparent tank window is integrated into its circular exterior design. You can use this to observe the e-liquid usage. A button on the side of the device allows you to switch between two modes. The normal mode for up to 50000 puffs with a 900mAh battery. And the higher nicotine strength vapes are for those seeking a stronger throat hit. Choose this emerging brand and embark on a unique experience. Features • Approximately 50000 Puffs • Internal 900mAh Rechargeable Battery • Two Modes: Normal / Turbo • Adjustable Airflow • Transparent Tank Window • Equipped with 0.9ohm Dual Mesh Coil • Draw Activation • USB Type-C Charging (cable not included) Pixi 50K Kit PACKAGE LIST 1 x Pixi 50000 Puffs Disposable Kit Flavor Options • Arctic Freeze • Blackcurrant Grape • Blueberry Peach Ice • Cane Tobacco • Double Grape Ice • Strawberry Dew Ice • Wanilla Bean Coffee ORDERING TIPS Attention: As the manufacturer needs the serial number to provide a replacement, we highly recommend you keep the original packing box or take picture of the code before discarding it. Thank you! Reviewed & Published by Vapesourcing Editorial Team The Vapesourcing Editorial Team specializes in vapes, product testing, and market research since 2014. Meet Our Team"
+    ],
+    "basic_params": {
+      "puff_count": "50000",
+      "battery": "900mAh",
+      "nicotine": "6% nicotine"
+    }
   }
 ]
