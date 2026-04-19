@@ -1,9 +1,9 @@
 # US New Product Monitor Report
 
-Generated at: `2026-04-18T22:37:34.527682+00:00`
+Generated at: `2026-04-19T22:38:50.977802+00:00`
 
 Tracked products: **100**
-Historically new products in this run: **1**
+Historically new products in this run: **0**
 
 ## Coverage
 
@@ -15,6 +15,4 @@ Historically new products in this run: **1**
 
 ## New Products
 
-| Site | First Seen | Name | Price | Reviews | Rating | Image | Selling Points | Basic Parameters | URL |
-| --- | --- | --- | --- | ---: | ---: | --- | --- | --- | --- |
-| vapesourcing_us | 2026-04-18T22:37:33.136668+00:00 | Fume Pro 30K Disposable Vape 22ml 5% (30000 puffs) | $17.99 | 27 | 4.75 | [Image](https://image.vapesourcing.com/images/202507/fume-pro-30k-0.jpg) | Fume Pro 30K Disposable Vape Fume Pro 30000 Disposable Kit INTRODUCTION Simplify your vaping life with the Fume Pro 30K Puffs Disposable vape . It's prefilled with a generous 22ml of e-liquid, delivering an astonishing 30,000 puffs. The integrated HD screen provides clear, real-time information on the e-juice level and battery life. You'll get a satisfying kick with 5% nicotine, and its 750mAh rechargeable battery provides a consistent vaping experience. There are 17 great flavors to pick from. The Fume Pro 30K Puffs 22ML Disposable Vape is designed for vapers seeking long-lasting vaping satisfaction. Features • 22ml Pre-filled Vape Juice • 5% Nicotine Strengths • 750mAh Rechargeable Internal Battery • Up to 30000 Puffs • 0.8ohm Dual Mesh Coil • Ultra HD Dynamic Display • 17 Flavors • Two Power Modes Fume Pro 30K Disposable Kit PACKAGE LIST 1 x Fume Pro 30K Disposable Vape Flavor Options • Black Ice • Cinnamon Twist • Dubai Chocolate • Florida Tropical Breeze • Freezer Ice • Lush Ice • Mango Tango • Miami Mint • Peach Ice • Pineapple Paradise • Polar Ice • Strawberry Banana • Strawberry Wind • Texas Citrus Rush • Triple Berry Ice • Watermelon Wave • White Grape ORDERING TIPS Attention: As the manufacturer needs the serial number to provide a replacement, we highly recommend you keep the original packing box or take picture of the code before discarding it. Thank you! Reviewed & Published by Vapesourcing Editorial Team The Vapesourcing Editorial Team specializes in vapes, product testing, and market research since 2014. Meet Our Team | puff_count: 30,000<br>oil_volume: 22 mL<br>battery: 750mAh<br>nicotine: 5% nicotine<br>charging: rechargeable | https://vapesourcing.com/fume-pro-30k.html |
+No historically new products detected in this run.
