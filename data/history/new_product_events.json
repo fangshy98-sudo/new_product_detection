@@ -2954,5 +2954,28 @@
       "charging": "USB-C",
       "dimensions": "31.2mm x 553.3mm x 83.7mm Battery Capacity: 1200mAh Battery Configuration: Integrated Rechargeable Charging: Type-C Port Operation: Draw-Activated Display Screen: 1.83\" TFT Screen Adjustable Power: PWR l ECO Pod Series: iMate OS Replacement Pod Compatible with iMate X Pods Pod Capacity: 6mL"
     }
+  },
+  {
+    "site_id": "vapesourcing_us",
+    "market": "us",
+    "product_key": "https://vapesourcing.com/ijoy-xp50000-zero-nicotine.html",
+    "name": "iJOY XP50000 Zero Nicotine Disposable Vape 0% (50000 Puffs)",
+    "product_url": "https://vapesourcing.com/ijoy-xp50000-zero-nicotine.html",
+    "first_detected_at": "2026-04-25T22:39:02.519207+00:00",
+    "first_detected_date": "2026-04-26",
+    "price_text": "$16.99",
+    "price_value": 16.99,
+    "review_count": 1,
+    "rating_value": 5.0,
+    "rating_count": null,
+    "image_url": "https://image.vapesourcing.com/images/202604/ijoy-xp50k-zero-nicotine-1.jpg",
+    "description_text": "iJOY XP50000 Zero Nicotine Disposable Vape is the nicotine-free version with 20ml e-juice and at most 50K puffs.",
+    "selling_points": [
+      "iJOY XP50000 Zero Nicotine Disposable Vape iJOY XP50000 Nicotine Free Disposable Kit INTRODUCTION iJOY XP50000 Zero Nicotine Disposable Vape is the nicotine-free edition with 20ml pre-filled vape juice and a 1000mAh rechargeable battery. Despite the absence of nicotine, XP50K Zero Nicotine by iJOY remains delicious and long-lasting with 20ml high-quality e-juice. It still supports Norm and Boost modes for pure enjoyment of flavored puffs. Moreover, you can check the e-liquid level directly by checking the transparent pod and the battery and other data on the screen. iJOY XP50K Nicotine Free Vape brings you only good flavors. Features • Transparent Tank for E-juice Level • Rechargeable Integrated 1000mAh Battery • Pre-filled 20ml E-Juice • Approximately up to 50000 Puffs (Norm) / 30000 Puffs (Boost) • Display Screen: Battery Life, E-juice Level and Output Mode • 0.4ohm Dual Mesh Coils • Airflow Control • 0% Nicotine Strength • USB Type-C Charging (Not Included) iJOY XP50000 Zero Nicotine Disposable Kit PACKAGE LIST 1 x iJOY XP50000 Nic Free Disposable Vape Flavor Options • White Peach Strawberry • Blue Razz Ice • Blueberry Sour Raspberry • Blueberry Watermelon • Cool Mint • Juicy Peach • Strawberry Clouds • Strawberry Ice • Triple Berry • Watermelon Ice ORDERING TIPS Attention: As the manufacturer needs the serial number to provide a replacement, we highly recommend you keep the original packing box or take a picture of the code before discarding it. Thank you! Reviewed & Published by Vapesourcing Editorial Team The Vapesourcing Editorial Team specializes in vapes, product testing, and market research since 2014. Meet Our Team"
+    ],
+    "basic_params": {
+      "oil_volume": "20 mL",
+      "nicotine": "0% nicotine"
+    }
   }
 ]
